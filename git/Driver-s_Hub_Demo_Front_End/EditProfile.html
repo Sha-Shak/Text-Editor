@@ -1,0 +1,256 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>edit profile</title>
+    <style type="text/css">
+      .form-control {
+        width: 250px;
+        height: 38px;
+      }
+      form {
+        padding-left: 550px;
+      }
+    </style>
+  </head> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>edit profile</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./css/editProfile.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- <style type="text/css">
+      .form-control {
+        width: 250px;
+        height: 38px;
+      }
+
+      form {
+        padding-left: 550px;
+      }
+    </style> -->
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="navId" class="navbar navbar-expand-md navbar-light  sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./images/logo.png" width="200px" height="60px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="./index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contactus.html">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./aboutus.html"> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./drivers.html"> Drivers </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="./jobs.html"> Jobs </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="./jobPost.html"> Post Job </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="./userpersonalprofileview.html">
+                Profile
+              </a>
+            </li>
+            <button
+              class="btn btn-outline-info my-2 my-sm-0"
+              onclick="window.location.href='Search.html'"
+              type="submit"
+            >
+              Search
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--- Navigation End -->
+    <div class="container">
+      <h2 style="text-align: center;">Edit Information</h2>
+      <div class="profile-info" style="text-align: center;">
+        <span>WELCOME,</span>
+        <!--<h4><?php echo $_SESSION['loginuser'];?></h4>//-->
+      </div>
+      <br /><br />
+      <form action="" method="post" enctype="multipart/form-data">
+        <label>
+          <h4><b>UPDATE DISPALY PICTURE : </b></h4>
+        </label>
+        <input class="form-control" type="file" name="file" /><br />
+        <label>
+          <h4><b>FIRST NAME : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="first" /><br />
+        <label>
+          <h4><b>LAST NAME : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="last" /><br />
+        <label>
+          <h4><b>E-MAIL : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="email" /><br />
+        <label>
+          <h4><b>PHONE NUMBER : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="PhoneNumber" /><br />
+        <label>
+          <h4><b>ADDRESS : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="Address" /><br />
+        <label>
+          <h4><b>BIRTHDAY : </b></h4>
+        </label>
+        <input
+          class="form-control"
+          type="date"
+          value=""
+          id="example-date-input"
+          name="Birthday"
+        /><br />
+        <label>
+          <h4><b>GENDER : </b></h4>
+        </label>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="gender"></label>
+            <select id="gender" class="form-control rounded-0">
+              <option selected>Male</option>
+              <option>Female</option>
+              <option>Preffer Not to Say</option>
+              <option>Others ..</option>
+            </select>
+          </div>
+        </div>
+
+        <label>
+          <h4><b>EXPERIENCE : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="Experience" /><br />
+        <label>
+          <h4><b>DRIVED VECHILES : </b></h4>
+        </label>
+        <input class="form-control" type="text" name="Address" /><br />
+        <label>
+          <h4><b>ENTER FACEBOOK URL : </b></h4>
+        </label>
+        <input class="form-control" type="url" name="facebook" /><br />
+        <label>
+          <h4><b>ENTER WEBSITE URL : </b></h4>
+        </label>
+        <input class="form-control" type="url" name="website" /><br />
+        <div style="padding-Left: 100px;">
+          <button
+            class="btn btn-primary"
+            type="submit"
+            name="submit"
+            onclick="window.location.href='EditProfile.html'"
+          >
+            UPDATE
+          </button>
+        </div>
+      </form>
+    </div>
+    <!--- Footer -->
+    <div class="container">
+      <div class="row">
+        <div class="footerlr col-sm">
+          <div class="fitem">
+            <p>Useful links</p>
+            <p>
+              <a href="./SignIn.html">Login</a>
+            </p>
+            <p>
+              <a href="./userpersonalprofileview.html">Your Account</a>
+            </p>
+            <p>
+              <a href="./contactus.html">Help</a>
+            </p>
+          </div>
+        </div>
+        <div class="middleFooter col-sm d-none d-sm-block">
+          <div class="special">
+            <h4>Drivers</h4>
+            <p>Hub</p>
+          </div>
+          <div class="iconx d-flex justify-content-around">
+            <i class="fab fa-facebook-f "></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="footerlr col-sm">
+          <div class="fitem">
+            <p>Contacts</p>
+            <p>
+              <i class="fas fa-home mr-3"></i> North South University,
+              Dhaka-1299
+            </p>
+            <p><i class="fas fa-envelope mr-3"></i> drivershub@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +88017687788761</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-center" style="margin-top: 100px;">
+          <div class="vl d-none d-sm-block"></div>
+          <p>About</p>
+          <p class="aboutText">
+            Driver’s hub is such a website model-based concept in which drivers
+            and assets simplify can communicate with each other. In addition, a
+            driver can figure out his job in this website and also a user can
+            post job opportunities if he/she needs a driver. Our main goal from
+            this website is to make easy for drivers to get a job and also for a
+            client to get a driver for their own purpose. After creating an
+            account, a user can post a job circular, after getting he/she can
+            delete the post. And a driver can apply for getting a job. The main
+            responsibilities of drivers are to transport their clients to their
+            destination safe and comfort fashion.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--- Footer -->
+  </body>
+</html>

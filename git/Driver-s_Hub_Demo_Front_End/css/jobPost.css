@@ -1,0 +1,151 @@
+header {
+  padding: 156px 0 100px;
+}
+section {
+  padding: 150px 0;
+}
+.form-control {
+  height: calc(1.25em + 2rem + 2px);
+  border-color: #f0f0f0;
+}
+.btn-primary {
+  color: #151515;
+  background-color: transparent;
+  border-color: #232323;
+}
+.btn {
+  text-transform: uppercase;
+  width: 200px;
+  height: calc(1.25em + 2rem + 2px);
+}
+.btn-primary:hover {
+  color: #f5a637;
+  background-color: transparent;
+  border-color: #232323;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #10151a;
+  border-color: #10151a;
+  box-shadow: 0 0 0 0.2rem rgba(13, 15, 17, 0.5);
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #10151a;
+  border-color: #10151a;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #10151a;
+  border-color: #10151a;
+}
+
+.bg-img {
+  background-image: url("../images/formslider.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body,
+.customBox {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+h2 {
+  padding-bottom: 20px;
+}
+
+.footerlr {
+  border-top-color: rgb(6, 4, 32);
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 1rem;
+}
+.fitem {
+  margin-top: 2rem;
+}
+.fitem > p {
+  text-align: center;
+  margin: 0.2px;
+  font-size: 13px;
+}
+.iconx {
+  margin-top: 2rem;
+}
+
+.vl {
+  border-left: 2px solid rgb(6, 4, 32);
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  margin-top: -70px;
+}
+
+.special {
+  text-align: center;
+}
+
+.special > h4 {
+  letter-spacing: 0.625rem;
+  margin: 0;
+}
+
+.special > p {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.4rem;
+}
+.aboutText {
+  text-align: justify;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  font-size: 13px;
+  word-spacing: 0.1px;
+  margin-top: 0;
+}
+.inputFile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.inputFile + label {
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.inputFile:focus + label {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.customBox {
+  border: 1px solid;
+  height: calc(1.25em + 2rem + 2px);
+  line-height: calc(1.25em + 2rem + 2px);
+  border-color: #f0f0f0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.bg-light1 {
+  background-color: #f5a637 !important;
+}

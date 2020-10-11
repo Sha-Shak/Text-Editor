@@ -1,0 +1,113 @@
+.form-bg {
+  background: url(image3.jpg);
+  height: 500px;
+}
+.forms {
+  padding-top: 100px;
+  padding-left: 300px;
+  padding-right: 300px;
+  color: black;
+}
+.forP {
+  padding-left: 300px;
+  padding-right: 300px;
+  color: black;
+}
+.formC {
+  padding-left: 300px;
+  padding-right: 300px;
+  color: rgb(0, 0, 0);
+}
+.formB {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+}
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #ffffff;
+  transition: all 0.3s;
+  bottom: 0;
+  border-right: rgb(211, 209, 219) 1px solid;
+}
+.list-group {
+  padding-top: 20%;
+}
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 30px;
+
+  height: 100px;
+}
+
+.maincontent {
+  padding: 30px 5% 5% 5%;
+}
+
+/* Footer */
+
+.footerlr {
+  border-top-color: rgb(6, 4, 32);
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 1rem;
+}
+.fitem {
+  margin-top: 2rem;
+}
+.fitem > p {
+  text-align: center;
+  margin: 0.2px;
+  font-size: 13px;
+}
+.iconx {
+  margin-top: 2rem;
+}
+
+.vl {
+  border-left: 2px solid rgb(6, 4, 32);
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  margin-top: -70px;
+}
+
+.special {
+  text-align: center;
+}
+
+.special > h4 {
+  letter-spacing: 0.625rem;
+  margin: 0;
+}
+
+.special > p {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.4rem;
+}
+.aboutText {
+  text-align: justify;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  font-size: 13px;
+  word-spacing: 0.1px;
+  margin-top: 0;
+}

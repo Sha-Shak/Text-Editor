@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="./css/dash.css" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>Dashboard</h3>
+      </div>
+
+      <ul class="list-group list-group-flush">
+        <li>
+          <a href="./dashboard.html" class="list-group-item list-group-item-action ">
+            Accounts
+          </a>
+        </li>
+        <li>
+          <a href="./dashboard2.html" class="list-group-item list-group-item-action active">
+            Jobs
+          </a>
+        </li>
+        <li>
+          <a href="./dashboard3.html" class="list-group-item list-group-item-action ">
+            Approved jobs
+          </a>
+        </li>
+        </li>
+        <a href="./dashboard4.html" class="list-group-item list-group-item-action ">
+          Pending jobs
+        </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button type="button" id="sidebarCollapse" class="btn btn-info">
+          <i class="fa fa-align-justify"></i> <span></span>
+        </button>
+        <a class="navbar-brand" href="/index.html"><img src="./images/logo.png" width="200px" height="60px"
+            style="padding-left: 15px;" /></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="index.html"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contactus.html">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutus.html"> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/drivers.html"> Drivers </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="/jobs.html"> Jobs </a>
+            </li>
+            <button class="btn btn-outline-info my-2 my-sm-0" onclick="window.location.href='Search.html'"
+              type="submit">
+              Search
+            </button>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="maincontent">
+        <h5>Lists of all Jobs</h5>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Job Id</th>
+                <th scope="col">Posted by</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+                <th scope="col">Action</th>
+                <th scope="col">Action</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">123456789</th>
+                <td>Masud Rana</td>
+                <td>Approved</td>
+                <td><a href="#" class="badge badge-warning">Hold</a></td>
+                <td><a href="#" class="badge badge-info">View</a></td>
+                <td><a href="#" class="badge badge-primary">Update</a></td>
+                <td><a href="#" class="badge badge-danger">Delete</a></td>
+              </tr>
+              <tr>
+                <th scope="row">123456789</th>
+                <td>Muttakin Ahmed</td>
+                <td>Pending</td>
+                <td><a href="#" class="badge badge-warning">Approve</a></td>
+                <td><a href="#" class="badge badge-info">View</a></td>
+                <td><a href="#" class="badge badge-primary">Update</a></td>
+                <td><a href="#" class="badge badge-danger">Delete</a></td>
+              </tr>
+              <tr>
+                <th scope="row">123456789</th>
+                <td>Md. Gulam Haider</td>
+                <td>Approved</td>
+                <td><a href="#" class="badge badge-warning">Hold</a></td>
+                <td><a href="#" class="badge badge-info">View</a></td>
+                <td><a href="#" class="badge badge-primary">Update</a></td>
+                <td><a href="#" class="badge badge-danger">Delete</a></td>
+              </tr>
+              <tr>
+                <th scope="row">123456789</th>
+                <td>Shadman Sadique</td>
+                <td>Pending</td>
+                <td><a href="#" class="badge badge-warning">Approve</a></td>
+                <td><a href="#" class="badge badge-info">View</a></td>
+                <td><a href="#" class="badge badge-primary">Update</a></td>
+                <td><a href="#" class="badge badge-danger">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- Footer -->
+  <div class="container">
+    <div class="row">
+      <div class="footerlr col-sm">
+        <div class="fitem">
+          <p>Useful links</p>
+          <p>
+            <a href="./SignIn.html">Login</a>
+          </p>
+          <p>
+            <a href="./userpersonalprofileview.html">Your Account</a>
+          </p>
+          <p>
+            <a href="./contactus.html">Help</a>
+          </p>
+        </div>
+      </div>
+      <div class="middleFooter col-sm d-none d-sm-block">
+        <div class="special">
+          <h4>Drivers</h4>
+          <p>Hub</p>
+        </div>
+        <div class="iconx d-flex justify-content-around">
+          <i class="fab fa-facebook-f "></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="footerlr col-sm">
+        <div class="fitem">
+          <p>Contacts</p>
+          <p>
+            <i class="fas fa-home mr-3"></i> North South University,
+            Dhaka-1299
+          </p>
+          <p><i class="fas fa-envelope mr-3"></i> drivershub@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> +88017687788761</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text-center" style="margin-top: 100px;">
+        <div class="vl d-none d-sm-block"></div>
+        <p>About</p>
+        <p class="aboutText">
+          Driver’s hub is such a website model-based concept in which drivers
+          and assets simplify can communicate with each other. In addition, a
+          driver can figure out his job in this website and also a user can
+          post job opportunities if he/she needs a driver. Our main goal from
+          this website is to make easy for drivers to get a job and also for a
+          client to get a driver for their own purpose. After creating an
+          account, a user can post a job circular, after getting he/she can
+          delete the post. And a driver can apply for getting a job. The main
+          responsibilities of drivers are to transport their clients to their
+          destination safe and comfort fashion.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--- Footer -->
+
+
+
+  <script>
+    $(document).ready(function () {
+      $("#sidebarCollapse").on("click", function () {
+        $("#sidebar").toggleClass("active");
+      });
+    });
+  </script>
+</body>
+
+</html>

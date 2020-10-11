@@ -1,0 +1,57 @@
+h1,
+h2,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+h2 {
+  padding-bottom: 20px;
+}
+
+.footerlr {
+  border-top-color: rgb(6, 4, 32);
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 1rem;
+}
+.fitem {
+  margin-top: 2rem;
+}
+.fitem > p {
+  text-align: center;
+  margin: 0.2px;
+  font-size: 13px;
+}
+.iconx {
+  margin-top: 2rem;
+}
+
+.vl {
+  border-left: 2px solid rgb(6, 4, 32);
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  margin-top: -70px;
+}
+
+.special {
+  text-align: center;
+}
+
+.special > h4 {
+  letter-spacing: 0.625rem;
+  margin: 0;
+}
+
+.special > p {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.4rem;
+}
+.aboutText {
+  text-align: justify;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  font-size: 13px;
+  word-spacing: 0.1px;
+  margin-top: 0;
+}
